@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="nn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saunasystrene på Skjærsholmane</title>
+    <style>
+      :root {
+        color-scheme: only light;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        --primary: #27566b;
+        --secondary: #f2f5f7;
+        --accent: #f1a208;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--secondary);
+        color: #1a1a1a;
+        line-height: 1.6;
+      }
+
+      header {
+        background: linear-gradient(135deg, rgba(39, 86, 107, 0.95), rgba(13, 38, 47, 0.85)),
+          url("https://images.unsplash.com/photo-1516397281156-ca07cf9746fc?auto=format&fit=crop&w=1600&q=80")
+            center/cover;
+        color: #fff;
+        padding: 6rem 1.5rem;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0 0 1rem;
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        letter-spacing: 0.05em;
+      }
+
+      header p {
+        margin: 0 auto;
+        max-width: 40rem;
+        font-size: 1.25rem;
+      }
+
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem 4rem;
+      }
+
+      section {
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 1.5rem 3rem rgba(39, 86, 107, 0.1);
+        padding: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      section h2 {
+        margin-top: 0;
+        color: var(--primary);
+        font-size: clamp(1.75rem, 4vw, 2.3rem);
+      }
+
+      .grid {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      @media (min-width: 720px) {
+        .grid-2 {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .card {
+        background: var(--secondary);
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+      }
+
+      .card h3 {
+        margin-top: 0;
+        color: var(--primary);
+      }
+
+      .cta {
+        background: var(--primary);
+        color: #fff;
+        text-align: center;
+        padding: 2rem 1.5rem;
+      }
+
+      .cta a {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.75rem 1.75rem;
+        background: var(--accent);
+        color: #1a1a1a;
+        border-radius: 999px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .cta a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0.5rem 1.25rem rgba(241, 162, 8, 0.3);
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 1rem 3rem;
+        color: #555;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Saunasystrene</h1>
+      <p>
+        Ein glødande gjeng badenymfer frå Stord som held liv i dampen på Skjærsholmane
+        – året rundt.
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>Kven er me?</h2>
+        <p>
+          Saunasystrene er eit kreativt fellesskap av venner og naboar som deler
+          lidenskapen for varmen i veden, kulden i fjorden og roen som oppstår når me
+          kombinerer dei to. Basen vår er den vesle holmen rett utanfor Leirvik, der me
+          har rigga til ei vedfyrt badstove, ei lita sjøbod for kaffepauser og ein trygg
+          badestige ned i Sørfjorden.
+        </p>
+        <p>
+          Me inviterer både øybuarar og tilreisande til å senke tempoet, høyre på måkeskrik
+          og kjenne frisk sjø på kroppen. Her er det rom for både stillheit og skravling,
+          og me tek godt vare på kvarandre – nye som gamle vener.
+        </p>
+      </section>
+
+      <section>
+        <h2>Det som skjer</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Opne dampkveldar</h3>
+            <p>
+              Kvar tysdag og torsdag kl. 18–21 fyrer me opp badstova for alle som vil.
+              Me legg ut ledige plassar på Instagram-sida vår, og du kan reservere ved å
+              sende ei melding. Ta med handkle, drikkeflaske og badetøflar.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Morgonbad og pust</h3>
+            <p>
+              Annakvar laurdag kl. 08 møtest me til morgonsamling. Me startar med ei roleg
+              pustestund i badstova, før me tek eit friskt dukkert og avsluttar med varm
+              kaffi og nysteikte bollar på brygga.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Leige for grupper</h3>
+            <p>
+              Saunasystrene kan leigast til vennelag, feiringar eller bedrifter som treng
+              ein annleis samlingsplass. Me stiller med vertskap, fyring og gode historier
+              frå livet på holmane.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Sesongmarknad</h3>
+            <p>
+              Fire gonger i året arrangerer me marknad på brygga med lokale produsentar,
+              sjømat, kunst og handverk. Heile inntekta går til vedlikehald av badstova og
+              nye sjøbadprosjekt.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Praktisk info</h2>
+        <div class="grid grid-2">
+          <div>
+            <h3>Kor finn du oss?</h3>
+            <p>
+              Skjærsholmane ligg fem minutt med båt frå Leirvik sentrum. Me har avtale med
+              lokale skyssførarar, og på opne kveldar set me opp felles transport frå
+              gjestebrygga. Du får detaljer når du melder deg på.
+            </p>
+          </div>
+          <div>
+            <h3>Kva kostar det?</h3>
+            <p>
+              Opne dampkveldar: 150 kr per person.<br />
+              Morgonbad og pust: 220 kr inkludert servering.<br />
+              Grupper: frå 2 200 kr for to timar, inkludert vertskap.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <h2>Klar for å bli med?</h2>
+        <p>
+          Følg oss på Instagram <strong>@saunasystrene</strong>, eller send ein e-post til
+          <a href="mailto:hei@saunasystrene.no" style="color: inherit">hei@saunasystrene.no</a>
+          for påmelding, samarbeid eller spørsmål.
+        </p>
+        <a href="mailto:hei@saunasystrene.no">Send oss ei helsing</a>
+      </section>
+    </main>
+    <footer>
+      © <span id="year"></span> Saunasystrene – varme møter kald sjø på Stord.
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
